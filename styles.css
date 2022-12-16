@@ -1,0 +1,265 @@
+* {
+  /* box-sizing: border-box; (e alterar as compensaçoes feitas nos heights)*/
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.content_texts_top {
+  width: 1440px;
+  height: 248px;
+
+  display: flex;
+}
+
+.bloc_text1 {
+  width: 521px;
+  height: 144px;
+  margin-left: 120px;
+  margin-right: 162px;
+  margin-top: 64px;
+  margin-bottom: 40px;
+}
+
+.text1 {
+  position: absolute;
+  width: 521px;
+  height: 144px;
+  left: 120px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+
+  color: #121212;
+}
+
+.bloc_text2 {
+  width: 517px;
+  height: 96px;
+  margin-top: 88px;
+  margin-right: 120px;
+  margin-bottom: 64px;
+}
+
+.text2 {
+  width: 517px;
+  height: 96px;
+  left: 803px;
+  top: 2486px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+
+  color: #888888;
+}
+
+.content_blocs {
+  display: flex;
+  padding-bottom: 64px;
+}
+
+.bloc1 {
+  margin-left: 120px;
+}
+
+.rectangle1 {
+  width: 373px;
+  height: 242px;
+  background: #d9d9d9;
+  border-radius: 4px;
+}
+
+.p1_bloc1 {
+  /* position: absolute; ??? */
+  margin-left: 36px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+
+  color: #121212;
+}
+
+.p2_bloc1 {
+  position: absolute;
+  width: 325px;
+  height: 96px;
+  left: 144px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+
+  text-align: center;
+
+  color: #888888;
+}
+
+.button1 {
+  position: absolute;
+  width: 153px;
+  height: 52px;
+  left: 230px;
+  margin-top: 136px;
+  border-color: #ffb44c;
+  color: #ffffff;
+
+  background: #ffb44c;
+  border-radius: 4px;
+}
+
+.bloc2 {
+  width: 373px;
+  height: 526px;
+  margin-left: 40px;
+  margin-top: 0px;
+}
+
+.rectangle2 {
+  width: 373px;
+  height: 368px;
+  background: #d9d9d9;
+  border-radius: 4px;
+  padding-top: 158px;
+}
+
+/* duvida: cada vez que uso um padding-top e bottom, preciso retirar esse mesmo valor 
+do height pra compensar. é normal ter que fazer isso sempre?*/
+
+.p1_bloc2 {
+  width: 268px;
+  height: 48px;
+  margin-left: 53px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.p2_bloc2 {
+  width: 325px;
+  height: 96px;
+  margin-left: 24px;
+  margin-top: 16px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.button2 {
+  width: 153px;
+  height: 52px;
+  margin-left: 110px;
+  margin-top: 24px;
+  border-color: #ffb44c;
+  color: #ffffff;
+
+  background: #ffb44c;
+  border-radius: 4px;
+}
+
+.bloc3 {
+  margin-left: 40px;
+}
+
+.rectangle3 {
+  width: 374px;
+  height: 242px;
+  background: #d9d9d9;
+  border-radius: 4px;
+}
+
+.p1_bloc3 {
+  /* position: absolute; ??? */
+  margin-left: 85px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+
+  color: #121212;
+}
+
+.p2_bloc3 {
+  position: absolute;
+  width: 325px;
+  height: 96px;
+  margin-left: 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+
+  text-align: center;
+
+  color: #888888;
+}
+
+.button3 {
+  position: absolute;
+  width: 153px;
+  height: 52px;
+  margin-left: 110px;
+  margin-top: 136px;
+  border-color: #ffb44c;
+  color: #ffffff;
+
+  background: #ffb44c;
+  border-radius: 4px;
+}
+/* nesse caso com position absolute o botao ficou em cima do texto p2
+e quando eu tire ele ficou por tras do texto */
+
+/* Pq às vezes o margin fica referenciado à uma div, e em outros casos
+referencia à outra div? Por exemplo nesse button 3 e 1 as margens ficaram
+referenciados até as divs p1. Ja no button 2 ficou referenciado à div p2 (24px) */
+
+/* transformar todos os px em rem (auto transform rem em 10px)*/
+
+/* width, hight (%) e border radius usa px */
+
+/* deixar tudo centralizado com bordas adaptaveis usando margin: 0 auto e trocar
+todos os widhts por 1200px (usar a main)*/
+
+/* Retirar das divs os textos da parte superior, usar display flex, align items space between,
+e classes para cada h1 etc. */
