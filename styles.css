@@ -1,25 +1,23 @@
 * {
-  /* box-sizing: border-box; (e alterar as compensaçoes feitas nos heights)*/
   margin: 0;
   padding: 0px;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
   font-size: 62.5%; // 62.5% = 10px
 }
 
-.content_texts_top {
+main {
+  padding: 64px 120px;
+}
+
+.container_texts_top {
   width: 100%;
   max-width: 1200px;
-  height: 248px;
-
   display: flex;
   justify-content: space-between;
-  padding: 120px;
-  /* apenas o padding top seria 64px no figma mas eu deixei assim,
-  como faria pra ficar exatamente igual ao figma? Tentei colocar embaixo
-  o padding top mas o h1 ficou colado no topo. */
 }
 
 h1 {
@@ -38,24 +36,30 @@ h1 {
 }
 
 h3 {
-  width: 517px;
+  width: 373px;
   height: 96px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
+  text-align: center;
+  margin-bottom: 24px;
 
   color: #888888;
 }
 
-.content_blocs {
-  display: flex;
-  padding-bottom: 64px;
+.h3_top {
+  width: 517px;
+  height: 96px;
+  text-align: left;
 }
 
-.bloc1 {
-  margin-left: 120px;
+.container_blocks {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  padding-top: 40px;
 }
 
 .rectangle1 {
@@ -63,14 +67,10 @@ h3 {
   height: 242px;
   background: #d9d9d9;
   border-radius: 4px;
+  margin-bottom: 24px;
 }
 
-.p1_bloc1 {
-  /* position: absolute; ??? */
-  margin-left: 36px;
-  margin-top: 24px;
-  margin-bottom: 16px;
-
+h2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -78,41 +78,24 @@ h3 {
   line-height: 48px;
   letter-spacing: 0.5px;
   text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 16px;
 
   color: #121212;
 }
 
-.p2_bloc1 {
-  position: absolute;
-  width: 325px;
-  height: 96px;
-  left: 144px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-
-  text-align: center;
-
-  color: #888888;
-}
-
-.button1 {
-  position: absolute;
+button {
   width: 153px;
   height: 52px;
-  left: 230px;
-  margin-top: 136px;
   border-color: #ffb44c;
   color: #ffffff;
 
   background: #ffb44c;
   border-radius: 4px;
+  margin: 0 110px;
 }
 
-.bloc2 {
+.block2 {
   width: 373px;
   height: 526px;
   margin-left: 40px;
@@ -121,60 +104,21 @@ h3 {
 
 .rectangle2 {
   width: 373px;
-  height: 368px;
+  height: 526px;
   background: #d9d9d9;
   border-radius: 4px;
   padding-top: 158px;
 }
 
-.p1_bloc2 {
-  width: 268px;
-  height: 48px;
-  margin-left: 53px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-
-  text-align: center;
-  letter-spacing: 0.5px;
-  text-transform: capitalize;
-
+.h2_2 {
   color: #ffffff;
 }
 
-.p2_bloc2 {
-  width: 325px;
-  height: 96px;
-  margin-left: 24px;
-  margin-top: 16px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-
-  text-align: center;
-
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.button2 {
-  width: 153px;
-  height: 52px;
-  margin-left: 110px;
-  margin-top: 24px;
-  border-color: #ffb44c;
+.h3_block2 {
   color: #ffffff;
-
-  background: #ffb44c;
-  border-radius: 4px;
 }
 
-.bloc3 {
+.block3 {
   margin-left: 40px;
 }
 
@@ -185,56 +129,11 @@ h3 {
   border-radius: 4px;
 }
 
-.p1_bloc3 {
-  /* position: absolute; ??? */
-  margin-left: 85px;
-  margin-top: 24px;
-  margin-bottom: 16px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-  letter-spacing: 0.5px;
-  text-transform: capitalize;
-
-  color: #121212;
-}
-
-.p2_bloc3 {
-  position: absolute;
+.h3_block3 {
   width: 325px;
   height: 96px;
   margin-left: 24px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-
-  text-align: center;
-
-  color: #888888;
 }
-
-.button3 {
-  position: absolute;
-  width: 153px;
-  height: 52px;
-  margin-left: 110px;
-  margin-top: 136px;
-  border-color: #ffb44c;
-  color: #ffffff;
-
-  background: #ffb44c;
-  border-radius: 4px;
-}
-
-/* transformar todos os px em rem (auto transform rem em 10px)*/
-
-/* width, hight (%) e border radius usa px */
 
 /* deixar tudo centralizado com bordas adaptaveis usando margin: 0 auto e trocar
 todos os widhts por 1200px (usar a main)*/
