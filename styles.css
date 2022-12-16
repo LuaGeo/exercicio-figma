@@ -1,32 +1,30 @@
 * {
   /* box-sizing: border-box; (e alterar as compensaçoes feitas nos heights)*/
   margin: 0;
-  padding: 0;
+  padding: 0px;
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  font-size: 62.5%; // 62.5% = 10px
+}
+
 .content_texts_top {
-  width: 1440px;
+  width: 100%;
+  max-width: 1200px;
   height: 248px;
 
   display: flex;
+  justify-content: space-between;
+  padding: 120px;
+  /* apenas o padding top seria 64px no figma mas eu deixei assim,
+  como faria pra ficar exatamente igual ao figma? Tentei colocar embaixo
+  o padding top mas o h1 ficou colado no topo. */
 }
 
-.bloc_text1 {
+h1 {
   width: 521px;
   height: 144px;
-  margin-left: 120px;
-  margin-right: 162px;
-  margin-top: 64px;
-  margin-bottom: 40px;
-}
-
-.text1 {
-  position: absolute;
-  width: 521px;
-  height: 144px;
-  left: 120px;
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -39,20 +37,9 @@
   color: #121212;
 }
 
-.bloc_text2 {
+h3 {
   width: 517px;
   height: 96px;
-  margin-top: 88px;
-  margin-right: 120px;
-  margin-bottom: 64px;
-}
-
-.text2 {
-  width: 517px;
-  height: 96px;
-  left: 803px;
-  top: 2486px;
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -139,9 +126,6 @@
   border-radius: 4px;
   padding-top: 158px;
 }
-
-/* duvida: cada vez que uso um padding-top e bottom, preciso retirar esse mesmo valor 
-do height pra compensar. é normal ter que fazer isso sempre?*/
 
 .p1_bloc2 {
   width: 268px;
@@ -247,12 +231,6 @@ do height pra compensar. é normal ter que fazer isso sempre?*/
   background: #ffb44c;
   border-radius: 4px;
 }
-/* nesse caso com position absolute o botao ficou em cima do texto p2
-e quando eu tire ele ficou por tras do texto */
-
-/* Pq às vezes o margin fica referenciado à uma div, e em outros casos
-referencia à outra div? Por exemplo nesse button 3 e 1 as margens ficaram
-referenciados até as divs p1. Ja no button 2 ficou referenciado à div p2 (24px) */
 
 /* transformar todos os px em rem (auto transform rem em 10px)*/
 
