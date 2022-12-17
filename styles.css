@@ -9,6 +9,78 @@
   font-size: 62.5%; // 62.5% = 10px
 }
 
+header {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 120px;
+  margin-top: 32px;
+}
+
+.logo {
+  display: flex;
+  gap: 12px;
+}
+
+.ellipse {
+  width: 40px;
+  height: 40px;
+  background-color: #ffb44c;
+  border-radius: 50%;
+  padding-left: 12.49px;
+  display: flex;
+  gap: 24.44px;
+}
+
+.img_logo {
+  width: 15.07px;
+  height: 51.85px;
+}
+
+.text_logo {
+  width: 119px;
+  height: 36px;
+  left: 172px;
+  top: 40px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #ffb44c;
+}
+
+.menu {
+  width: 430px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.menus {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #888888;
+}
+
+.menus1 {
+  font-weight: 600;
+  color: #ffb44c;
+}
+
+.button_header {
+  margin: 0px;
+}
+
 main {
   padding: 64px 120px;
 }
@@ -99,7 +171,6 @@ button {
   width: 373px;
   height: 526px;
   margin-left: 40px;
-  margin-top: 0px;
 }
 
 .rectangle2 {
@@ -127,6 +198,7 @@ button {
   height: 242px;
   background: #d9d9d9;
   border-radius: 4px;
+  margin-bottom: 24px;
 }
 
 .h3_block3 {
