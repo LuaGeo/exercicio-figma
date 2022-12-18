@@ -11,12 +11,14 @@
 
 header {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
+  height: 62px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 120px;
-  margin-top: 32px;
+  padding: 0 120px;
+  background: rgba(255, 67, 191, 0.07);
+  opacity: 0.6;
 }
 
 .logo {
@@ -207,8 +209,33 @@ button {
   margin-left: 24px;
 }
 
+footer {
+  width: 100%;
+  max-width: 1440px;
+  height: 165px;
+  padding: 20px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 67, 191, 0.07);
+  opacity: 0.6;
+}
+
+ul {
+  list-style: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #888888;
+}
+/* pq os botoes ficaram com sombra nas configuracoes de base? (diferente de como ta no figma)
+Como faz pra retirar? */
+
+/* um unico arquivo css para todas as paginas html? */
+
 /* deixar tudo centralizado com bordas adaptaveis usando margin: 0 auto e trocar
 todos os widhts por 1200px (usar a main)*/
 
-/* Retirar das divs os textos da parte superior, usar display flex, align items space between,
-e classes para cada h1 etc. */
+/* Retirar das divs os textos da parte superior, usar display flex, align items space between */
